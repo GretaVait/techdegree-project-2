@@ -1,0 +1,380 @@
+
+/* Base Styles */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: 'Lato', sans-serif;
+	line-height: 1.6;
+	color: lightslategray;
+}
+
+p {
+	font-size: .95em;
+	margin-bottom: 1.5em;
+}
+
+h2,
+h3,
+a,
+span {
+	font-family: 'Comfortaa', cursive;
+	color: #91010f;
+	text-transform: uppercase;
+}
+
+h2,
+h3 {
+	margin-top: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+/* ---- Navigation ---- */
+
+.name {
+	font-size: 1.777em;
+}
+
+.name,
+.main-nav li {
+	text-align: center;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+.name a,
+.main-nav a {
+	padding: 10px 15px;
+	text-align: center;
+	display: block;
+}
+
+.main-nav a {
+	font-size: .95em;
+	background: #e8c2c3;
+}
+
+.main-nav a:hover {
+	color: #fff;
+}
+
+/*---- Headings Properties ----*/
+
+.content-name,
+.footer-name {
+	font-size: 1.333em;
+	padding: 1.25em 0;
+}
+
+/* ---- Layout Containers ---- */
+
+.container,
+.about-me {
+	text-align: center;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.main-header {
+	padding: 1.5em 0;
+	margin-bottom: 1.875em;
+	background: #efdcde;
+}
+
+.about-me {
+	margin-top: 3.125em;
+}
+
+.about-me p {
+	font-size: 1em;
+}
+
+.about-me img {
+	width: 100%;
+}
+
+.col {
+	text-align: center;
+	width: 100%;
+	padding: 5px;
+}
+
+.feat-img {
+	width: 100%;
+	padding-bottom: 15px;
+}
+
+/*---- Portfolio section text properties ----*/
+
+.col h3,
+.col p {
+	width: 80%;
+	height: 12em;
+	margin: auto;
+}
+
+.col h3 {
+	height: 3.125em;
+}
+
+.col p {
+	padding-bottom: 6.25em;
+}
+
+/*---- Footer ----*/
+
+.main-footer {
+	text-align: center;
+	padding: 3.125em 1.25em 0 1.25em;
+	background: #efdcde;
+	overflow: hidden;
+}
+
+.footer-content {
+	border-top: 1px solid #000;
+}
+
+.student {
+	float: left;
+	margin: 1.25em 0 1.25em 1.25em;
+}
+
+.back-to-top {
+	float: right;
+	margin: 1.25em 1.25em 1.25em 0;
+}
+
+.full-footer-content {
+	display: none;
+}
+
+/*---- Media Queries ----*/
+
+@media (min-width: 769px) {
+	.name,
+	.main-nav li {
+		display: inline-block;
+	}
+	
+	.name {
+		width: 240px;
+	}
+	
+	.main-nav li {
+		margin-right: 12px;
+	}
+
+	.main-nav a {
+		background: none;
+	}
+
+	.about-me {
+		overflow: hidden;
+	}
+
+	.about-me img {
+		float: right;
+		width: 50%;
+		margin-left: 10px;
+		padding-right: 1em;
+		padding-top: 5px;
+	}
+
+	.about-me p {
+		display: block;
+		padding-left: 1em;
+		text-align: left;
+		margin: 0;
+		font-size: 1.333em;
+	}
+
+	.feat-img {
+		width: 100%;
+	}
+
+	.col {
+		float: left;
+		text-align: center;
+		width: 50%;
+		padding: 5px;
+	}
+
+	.main-footer {
+		padding: 3.125em;
+	}
+
+	.contact {
+		margin-bottom: 50px;
+		border-bottom: 1px solid #000;
+	}
+
+	.footer-nav {
+		float: right;
+		padding: 0;
+		margin: 0;
+	}
+
+	.footer-nav li {
+		float: left;
+		padding-right: 20px;
+	}
+	
+	.footer-nav a:hover {
+		color: #fff;
+	}
+
+  .student {
+		float: left;
+		margin: 0;
+  }
+
+	.full-footer-content {
+		display: inline;
+	}
+
+	.footer-content {
+		display: none;
+	}
+}
+
+@media (min-width: 1025px) {
+
+	body {
+		background: #efdcde;
+	}
+
+	.wrap {
+		min-height: calc(100vh - 89px);
+	}
+
+	.content-name,
+	.footer-name {
+		font-size: 1em;
+		text-align: center;
+	}
+
+	.content-name {
+		padding-bottom: 20px;
+	}
+
+	.container,
+	.about-me,
+	.portfolio-section {
+		width: 95%;
+		margin: 0 auto;
+	}
+
+	.name {
+		float: left;
+	}
+	
+	.name a {
+		text-align: left;
+	}
+
+  .main-nav {
+    float: right;
+  }
+
+  .main-nav li {
+    float: left;
+    margin-left: 12px;
+	}
+	
+	.main-nav a {
+		background: none;
+	}
+
+	.about-me img {
+		float: right;
+		width: 40%;
+		margin-left: 3.125em;
+		padding-right: 1em;
+	}
+
+	.col h3 {
+		padding-bottom: 10px;
+	}
+
+	.about-me p {
+		display: block;
+		padding-left: 15px;
+		text-align: left;
+		font-size: 1.333em;
+	}
+
+	.feat-img {
+		width: 100%;
+	}
+
+	.col {
+		text-align: center;
+		float: left;
+		width: 33.33%;
+		padding: 5px;
+	}
+
+	.portfolio-section {
+		background: #fff;
+		padding: 3.125em 1.625em;
+	}
+
+	.contact {
+		width: 60%;
+		margin: auto;
+		margin-bottom: 3.125em;
+		border-bottom: 1px solid #000;
+	}
+
+	.footer-name {
+		padding-top: 1.25em;
+	}
+
+	.footer-nav {
+    float: right;
+	}
+
+  .footer-nav li {
+    float: left;
+    margin-left: 12px;
+  }
+
+  .student {
+		float: left;
+		margin: 0;
+	}
+	
+	.full-footer-content {
+		display: inline;
+	}
+
+	.footer-content {
+		display: none;
+	}
+
+	/*---- Clearfix ----*/
+
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+
+
+
+
+
+
